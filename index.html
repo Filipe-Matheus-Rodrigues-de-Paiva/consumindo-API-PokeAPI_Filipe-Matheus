@@ -3,10 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/index.css">
     <title>Consumindo PokeAPI</title>
   </head>
-
-  <body></body>
+  <body>
+    <div class="container__header">
+      <img class="logo" src="./src/assets/pokeapi.png" alt="Logo Pokemon">
+      <form class="hidden">
+        <input type="text" placeholder="Pesquisar por...">
+        <button type="submit"><img src="./src/assets/search-icon.png" alt="Lupa"></button>
+      </form>
+    </div>
+    <h1>Lista de Pokemon</h1>
+    <ul class="pokemon__list">
+      
+    </ul>
+    <p class="loading">Carregando...</p>
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
 </html>
